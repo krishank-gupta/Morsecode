@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://kit.fontawesome.com/de0ba7ce85.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./Styles/style.css">
+	<title>Morse Code | NHD | Krish</title>
+</head>
+<body id="home" class="scrollspy" onload="typeWriter()">
+
+	<!-- Nav -->
+	<div class="navbar-fixed">
+		<nav class="black">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#" class=" brand-logo">Morse Code</a>
+					<a href="#" data-target="mobile-nav" class="sidenav-trigger">
+						<i class="material-icons">menu</i>
+					</a>
+					<ul class="right hide-on-med-and-down">
+						<li>
+							<a href="#home">Home</a>
+						</li>
+						<li>
+							<a href="#thesis">Thesis</a>
+						</li>
+						<li>
+							<a href="#diveDeeper" class="dropdown-trigger" data-target="dropdown1">Dive Deeper</a>
+							<ul id='dropdown1' class='dropdown-content' style="display: block;">
+								<li>
+									<a href="#birth" class="black-text">Birth Of Morse Code</a>
+								</li>
+								<li>
+									<a href="#baltimore-washington" class="black-text">Baltimore-Washington Telegraph Line</a>
+								</li>
+								<li>
+									<a href="#what-hath" class="black-text">What Hath God Wraught</a>
+								</li>
+							</ul>
+						</li>					
+						<li>
+							<a href="#translate">Translate</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<ul class="sidenav" id="mobile-nav">
+		<li>
+			<a href="#home">Home</a>
+		</li>
+		<li>
+			<a href="#thesis">Thesis</a>
+		</li>
+		<li>
+			<a href="#diveDeeper">Dive Deeper</a>
+		</li>
+		<li>
+			<a href="#translate">Translate</a>
+		</li>
+	</ul>
+
+	<!-- Section: Landing... -->
+	<section class="slider">
+		<ul class="slides">
+			<li>
+				<img src="https://images.unsplash.com/photo-1570286424717-86d8a0082d0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80"> <!-- random image -->
+				<div class="caption center-align white-text hide-on-small-only">
+					<h1 id="demo" class="black-text"></h1>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<!-- Section: Thesis... -->
+	<section class="section section-icons black lighten-4 center" id="thesis">
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<div class="card-panel">
+						<i class="material-icons large black-text">book</i>
+						<h3>Morse Code broke the barriers of communication over long distances</h3>
+						<p>In the early 1800s, many scientists and engineers were trying to find a way to create a device that could be used to communicate over large distances. In 1836, Samuel Morse, Joseph Henry &amp; Alfred Vail invented an electrical telegraph system. It was the first of its kind. However, this telegraph system could only send electrical pulses to another machine. Therefore, humans wouldn't be able to understand the message through pulses, so a code needed to be developed that could translate these pulses into alphabets. This was developed by Samuel Morse.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row flex">
+				<div class="col s12 m6 white black-text card-panel">
+					<br>
+					<img class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/International_Morse_Code.svg/315px-International_Morse_Code.svg.png">
+					<p>Image Credits:<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/International_Morse_Code.svg/315px-International_Morse_Code.svg.png" target="_blank"> Wikipedia</a></p>
+					<p>The code utilizes standarized sequences of two diffrent pulse lengths called dits and dahs. The dits are represented by a • or sometimes a . and the dahs are represented by -. Therefore, the letter A can be represented as •- or dit dah.</p>
+				</div>
+
+				<div class="col s12 m6 white black-text card-panel">
+					<br>
+					<img class="responsive-img" src="https://www.firewall.cx/images/stories/networking/cabling-morse-code-device-1.jpg">
+					<p>Image Credits: <a href="http://www.firewall.cx/networking-topics/cabling-utp-fibre/1121-cabling-early-communication-technology-morse-code-and-ethernet.html" target="_blank">Firewall</a></p>
+					<p>This is a telegraph. This machine creates or receives the electrical pulses. These pulses are then translated by the operator. To produce a dit, you press the black button for 1 unit and to produce a dah, you press th black button for 3 units. The dot duration in one unit and the basic unit of time measurement in Morse Code.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Section: Dive Deeper -->
+	<section class="section section-icons white lighten-4 center" id="diveDeeper">
+		<div class="container">
+			<div class="row"  id="birth">
+				<div class="col s12">
+					<div class="card-panel">
+						<h3>The Birth of Morse Code</h3>
+						<p>In the late 1940s, the original Morse Code was starting to be used widely all around the world. Since it was made for the transmission of English alphabets, it was clear that it was inadequate for the transmission of non-English text, since it lacked codes for alphabets with accents. To overcome this defieceincy, the International Morse Code was born. The International Morse Code was the result of a conference of European Nations in 1851. This new code was suitable for languages like French. This new code is also called the Continental Morse Code.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12">
+					<div class="card-panel" id="baltimore-washington">
+						<h3>The Baltimore-Washington Telegraph Line</h3>
+						<!--  -->
+						<div class="row flex">
+							<div class="col s12 m6 valign-wrapper">
+								<p>The Baltimore-Washington Telegraph Line was the first long-distance telegraph line set up to communicate between Washington and Baltimore. In March 1843, the US Congress allocated 30,000 USD to set up a telegraph line between Washtington and Baltimore. Morse tried to lay the wires underground but it failed after 15 kilometres. He finally decided to set up poles just like they did in England. This new line was demonstrated on May 24, 1844 from the United States Capital in Washington to the Mount Clare Station of the railroad in Baltimore.</p>
+							</div>
+							<div class="col s12 m6 ">
+								<img class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/The_first_telegram._Professor_Samuel_Morse_sending_the_despatch_as_dictated_by_Miss_Annie_Ellsworth.jpg/220px-The_first_telegram._Professor_Samuel_Morse_sending_the_despatch_as_dictated_by_Miss_Annie_Ellsworth.jpg" alt="image">
+								<p>Image Credits: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/The_first_telegram._Professor_Samuel_Morse_sending_the_despatch_as_dictated_by_Miss_Annie_Ellsworth.jpg/220px-The_first_telegram._Professor_Samuel_Morse_sending_the_despatch_as_dictated_by_Miss_Annie_Ellsworth.jpg">Wikipedia</a></p>
+								<p>Professor Samuel Morse using the telegraph for the first time to officially open the Baltimore-Washington Telegraph Line</p>
+							</div>
+						</div>
+						<!--  -->
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12">
+					<div class="card-panel" id="what-hath">
+						<h3>What Hath God Wraught</h3>
+						<div class="row flex">
+							<div class="col s12 m6 valign-wrapper">
+								<p>"In a demonstration witnessed by members of Congress, American inventor Samuel F.B. Morse dispatches a telegraph message from the U.S. Capitol to Alfred Vail at a railroad station in Baltimore, Maryland. The message–“What Hath God Wrought?”–was telegraphed back to the Capitol a moment later by Vail. The question, taken from the Bible (Numbers 23:23), had been suggested to Morse by Annie Ellworth, the daughter of the commissioner of patents."</p>
+							</div>
+							<div class="col s12 m6 ">
+								<img class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/MD_Historical_Marker_First_Telegram.jpg/220px-MD_Historical_Marker_First_Telegram.jpg" alt="image">
+								<p>Image Credits: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/MD_Historical_Marker_First_Telegram.jpg/220px-MD_Historical_Marker_First_Telegram.jpg" target="_blank">Wikipedia</a></p>
+								<p>Maryland state historical marker commemorating the first telegraph message, located between US Highway 1 and railroad tracks in Beltsville, Maryland.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section: Translate -->
+	<section class="section black white-text center" id="translate">
+		<!-- <h2>Translate Morse and Text</h2> -->
+		<i class="material-icons large white-text">send</i>
+		<br>
+		<div class="container">
+			<div class="row black darken-4">
+				<div class="col s12">
+					<label for="encode">Encode:</label>
+					<input class="" type="text" id="encode" >
+				</div>
+				<div class="col s12">
+					<input type="submit" class="left waves-light btn white black-text" id="encodeSubmit" value="Encode">
+				</div>
+				<div class="col s12">
+					<h6 id="encoded" style="overflow-wrap: break-word">Result will be displayed here</h6>
+				</div>
+			</div>
+			<br>
+			<div class="row black darken-4">
+				<div class="col s12">
+					<label for="encode">Decode:</label>
+					<input class="" type="text" id="decode" >
+				</div>
+				<div class="col s12">
+					<input type="submit" class="left waves-light btn white black-text" id="decodeSubmit" value="Decode">
+				</div>
+				<div class="col s12">
+					<h6 id="decoded" style="overflow-wrap: break-word">Result will be displayed here</h6>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+
+	<section class="section section-follow white black-text center">
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<a href="https://docs.google.com/document/d/1ZSlGC6xPAVMTJt0ej0wcul4Jz1uGsXOf6SOdwYFkTD4/edit?usp=sharing" target="_blank" class="waves-effect waves-light btn black white-text">Process Paper</a>
+					<br>
+					<br>
+					<a href="https://docs.google.com/document/d/14ZnMdkAoxSQUplNjTrHuGj6uckz7QTZzlVd2h5ijhH8/edit?usp=sharing" target="_blank" class="waves-effect waves-light btn black white-text">Annotated Bibliography</a>
+					<p>This website is created by Krishank Gupta for NHD.</p>
+
+					<a href="https://www.instagram.com/krishank_gupta_kg/" target="_blank" class="white-text">
+						<i class="fab fa-instagram fa-3x black-text"></i>
+					</a>
+					<a href="https://github.com/krishank-gupta/" target="_blank" class="white-text">
+						<i class="fab fa-github fa-3x black-text"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Scripts -->
+	<script>
+		var i = 0;
+		var txt = '•-- • •-•• •-•- --- -- •'; /* The text */
+
+		function typeWriter() {
+			if (i < txt.length) {
+				document.getElementById("demo").innerHTML += txt.charAt(i);
+				i++;
+				if(txt.charAt(i) == " "){
+					setTimeout(typeWriter, 100)
+				} else if(txt.charAt(i) == "•"){
+					setTimeout(typeWriter, 100)
+				} else if(txt.charAt(i) == "-"){
+					setTimeout(typeWriter, 300)
+				} else{
+					setTimeout(typeWriter, 700);
+				}
+			}
+		}
+	</script>
+	<script>
+		document.getElementById('decodeSubmit').addEventListener('click', onDecodeClick)
+		function onDecodeClick(){
+			document.getElementById('decoded').innerHTML = (decode(document.getElementById('decode').value));   
+		}
+		document.getElementById('encodeSubmit').addEventListener('click', onEncodeClick)
+		function onEncodeClick(){
+			document.getElementById('encoded').innerHTML = (encode(document.getElementById('encode').value));
+		}
+		function encode(message){
+			let chars = message.toLowerCase().split(''), output = [];
+			chars.forEach(element => {
+				switch(element){
+					case "a": output.push("•-"); break;
+					case "b": output.push("-•••"); break;
+					case "c": output.push("•-•-"); break;
+					case "d": output.push("-••"); break;
+					case "e": output.push("•"); break; 
+					case "f": output.push("••-•"); break;
+					case "g": output.push("--•"); break;
+					case "h": output.push("••••"); break;
+					case "i": output.push("••"); break;
+					case "j": output.push("•---"); break;
+					case "k": output.push("-•-"); break;
+					case "l": output.push("•-••"); break;
+					case "m": output.push("--"); break;
+					case "n": output.push("-•"); break;
+					case "o": output.push("---"); break;
+					case "p": output.push("•--•"); break;
+					case "q": output.push("--•-"); break;
+					case "r": output.push("•-•"); break;
+					case "s": output.push("•••"); break;
+					case "t": output.push("-"); break;
+					case "u": output.push("••-"); break;
+					case "v": output.push("•••-"); break;
+					case "w": output.push("•--"); break;
+					case "x": output.push("-••-"); break;
+					case "y": output.push("-•--"); break;
+					case "z": output.push("--••"); break;
+					case " ": output.push("/"); break;         
+					default: output.push("?");
+				}
+			});
+			return output.join(" ");
+		}
+		function decode(message){
+			let chars = message.split(' '), output = [];
+			chars.forEach(element => {
+				switch(element){
+					case "•-": output.push("a"); break;
+					case "-•••": output.push("b"); break;
+					case "•-•-": output.push("c"); break;
+					case "-••": output.push("d"); break;
+					case "•": output.push("e"); break;
+					case "••-•": output.push("f"); break;
+					case "--•": output.push("g"); break;
+					case "••••": output.push("h"); break;
+					case "••": output.push("i"); break;
+					case "•---": output.push("j"); break;
+					case "-•-": output.push("k"); break;
+					case "•-••": output.push("l"); break;
+					case "--": output.push("m"); break;
+					case "-•": output.push("n"); break;
+					case "---": output.push("o"); break;
+					case "•--•": output.push("p"); break;
+					case "--•-": output.push("q"); break;
+					case "•-•": output.push("r"); break;
+					case "•••": output.push("s"); break;
+					case "-": output.push("t"); break;
+					case "••-": output.push("u"); break;
+					case "•••-": output.push("v"); break;
+					case "•--": output.push("w"); break;
+					case "-••-": output.push("x"); break;
+					case "-•--": output.push("y"); break;
+					case "--••": output.push("z"); break;
+					case "/": output.push(" "); break;
+					default: output.push("?"); break;
+				}
+			});
+			return output.join("");
+		}
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script>
+		// Sidenav
+		const sidenav = document.querySelector('.sidenav');
+		M.Sidenav.init(sidenav, {});
+		// Slider but I used it as a single image
+		// Too lazy to change it to a single image :(
+		const slider = document.querySelector('.slider');
+		M.Slider.init(slider, {
+			indicators: false,
+			height: 800,
+			transition: 1000,
+			interval: 5000,
+		})
+		// Scrollspy
+		const ss = document.querySelectorAll('.scrollspy');
+		M.ScrollSpy.init(ss, {});
+
+		// dropdown
+		const dropdown = document.querySelector('.dropdown-trigger');
+		M.Dropdown.init(dropdown, {
+			hover: true,
+			constrainWidth: false,
+			coverTrigger: false,
+		})
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
